@@ -1,4 +1,4 @@
-Projeto de Estudo Site Miniaturas
+# Projeto de Estudo Site Miniaturas
 
 Este projeto foi baseado no livro "Faça um Site - PHP 5 com banco de dados MySQL".
 
