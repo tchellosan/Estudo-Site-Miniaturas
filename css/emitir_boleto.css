@@ -1,0 +1,174 @@
+:root {
+    --ult-coluna: 20%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    *table-layout: fixed;
+}
+table tr td {
+    width: calc((100% - var(--ult-coluna))/5);
+}
+table tr td:last-child {
+    width: var(--ult-coluna);
+}
+td > table tr td,
+td > table tr td:last-child {
+    width: auto;
+}
+td {
+    border: 1px solid #000;
+    padding: 15px 10px 2px 5px;
+    position: relative;
+}
+td:first-child {
+    border-left: none;
+}
+td:last-child {
+    border-right: none;
+}
+td > label {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 9px;
+}
+td > label + label{
+    left: auto;
+    right: 2px;
+}
+.codigo-barras,
+.ficha-compensasao,
+.dados-sacado,
+.menu-boleto, 
+.cabecalho,
+.recibo-sacado,
+.instrucoes {
+    width: 700px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.cabecalho .logo {
+    float: left;
+}
+.cabecalho .numero-pedido {
+    float: right;
+    padding: 10px;
+}
+table span,
+table p {
+    font-weight: bolder;
+}
+.valor-documento {
+    text-align: right;
+}
+.instrucoes .destaque {
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.instrucoes p {
+    margin-top: 3px;
+}
+.instrucoes .linha-digitavel {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.dados-sacado tbody tr:first-child td{
+    padding-left: 35px;
+    border-bottom: none;
+}
+.dados-sacado tbody tr:last-child td {
+    border-top: none;
+}
+.dados-sacado > p {
+    text-align: right;
+}
+.dados-sacado table {
+    margin-top: 20px;
+}
+.dados-sacado img {
+    margin-top: 50px;
+    text-align: center;
+}
+.ficha-compensasao table {
+    margin-top: 20px;
+}
+.ficha-compensasao td > table {
+    table-layout: auto;
+    margin: 0;
+}
+.ficha-compensasao tr:first-child td {
+    padding: 0;
+    border: none;
+}
+.ficha-compensasao tr:first-child td > table td {
+    border-left: 1px solid #000;
+    padding: 2px;
+}
+.ficha-compensasao tr:first-child td > table td span {
+    font-size: 16px;
+    font-weight: normal;
+}
+.ficha-compensasao tr:first-child td > table td:first-child {
+    border-left: none;
+}
+
+.ficha-compensasao tr:first-child td > table td:nth-child(2) {
+    text-align: center;
+}
+.ficha-compensasao tr:first-child td > table td:last-child {
+    text-align: right;
+}
+.ficha-compensasao tr:first-child td > table img {
+    max-width: 100%;
+}
+.instrucoes-ficha ~ tr td {
+    border-left: 1px solid #000;
+    padding: 15px 0;
+}
+.instrucoes-ficha td {
+    vertical-align: top;
+}
+.instrucoes-ficha td p:first-of-type {
+    margin-top: 20px;
+}
+[colspan="5"] {
+    width: 75%;
+}
+.ficha table {
+    margin-top: 0;
+}
+.ficha table td {
+    border-top: none;
+}
+.codigo-barras img {
+    height: 50px;
+    border: 0;
+}
+.codigo-barras img.e {
+    width: 1px;
+}
+.codigo-barras img.l {
+    width: 3px;
+}
+.menu-boleto [href] {
+
+    outline: none;
+}
+@media print {
+    .menu-boleto {
+        display: none;
+    }
+}

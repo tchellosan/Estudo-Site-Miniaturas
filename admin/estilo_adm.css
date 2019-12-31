@@ -1,0 +1,343 @@
+/* CSS Document */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+td {
+	font-size: 11px;
+	padding: 2px;
+	color: #333333;
+}
+p {
+	margin-bottom: 2px;
+	margin-top: 2px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+label {
+	display: block;
+	width: 120px;
+	float: left;
+	height: 13px;
+	color: #333333;
+	padding-top: 1px;
+	line-height: 13px;
+}
+thead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #999999;
+	padding: 2px;
+}
+select {
+	font-size: 12px;
+	border: 1px solid #CCCCCC;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #003366;
+	background-color: #FFFFFF;
+}
+form {
+	margin: 0px;
+	padding: 0px;
+}
+h1 {
+	font-size: 12px;
+	font-weight: normal;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+h2 {
+	font-size: 12px;
+	color: #333333;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	font-weight: normal;
+	background-color: #E7EAED;
+	padding-top: 3px;
+	padding-right: 2px;
+	padding-bottom: 3px;
+	padding-left: 2px;
+}
+h3 {
+	font-size: 14px;
+	color: #657C9C;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 0px;
+	font-weight: normal;
+}
+h4 {
+	font-size: 12px;
+	color: #FFFFFF;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	font-weight: bold;
+	background-color: #576675;
+	padding-top: 3px;
+	padding-right: 2px;
+	padding-bottom: 3px;
+	padding-left: 2px;
+}
+h5 {
+	font-size: 14px;
+	color: #0066CC;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+h6 {
+	font-size: 10px;
+	color: #4D5A62;
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #8B99A7;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+}
+
+#corpo {
+	width: 800px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	vertical-align: top;
+	background-color: #FFFFFF;
+	padding: 0;
+}
+#topo {
+	display: block;
+	height: 40px;
+	text-align: right;
+	background-color: #FFFFFF;
+	background-image: url('../img/logo_fs.gif');
+	background-repeat: no-repeat;
+	background-position: left;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	color: #62737d;
+	font-size: 11px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#caixa_menu{
+	display: block;
+	padding: 5px;
+	color: #000000;
+	font-size: 11px;
+	width: 160px;
+	height: 100%;
+	float: left;
+	margin: 0px;
+	font-weight: bold;
+}
+#caixa_conteudo{
+	display: block;
+	border: 1px solid #CCCCCC;
+	color: #62737D;
+	font-size: 11px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 5px;
+	width: 610px;
+	background-color: #FFFFFF;
+	float: left;
+	padding: 5px;
+}
+#caixa_tabela {
+	display: block;
+	border: 1px solid #666666;
+	color: #62737D;
+	font-size: 11px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 5px;
+	width: 620px;
+	background-color: #FFFFFF;
+	float: left;
+	padding: 0px;
+}
+#caixa_cad {
+	display: block;
+	border: 1px solid #CCCCCC;
+	color: #62737D;
+	font-size: 11px;
+	background-color: #f4f4f4;
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+}
+#rodape {
+	color: #5E6F79;
+	font-size: 10px;
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	margin-top: 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #333333;
+	display: block;
+	clear: left;
+}
+.link_menu {
+	text-decoration: none;
+	color: #000000;
+	vertical-align: top;
+	padding-right: 10px;
+	padding-left: 15px;
+	background-image: url(../img/marcador_menu.gif);
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-indent: 0px;
+	margin: 0px;
+	display: block;
+	font-weight: normal;
+}
+.link_menu:hover {
+	text-decoration: underline;
+}
+blockquote {
+	padding-left: 7px;
+	margin: 0px;
+}
+
+.c_preto {
+	color: #000000;
+}
+.c_laranja {
+	color: #e67f1a;
+}
+.c_cinza {
+	color: #697D94;
+}
+.c_vermelho {
+	color: #FF3300;
+}
+.c_verde {
+	color: #009966;
+}
+.c_azul {
+	color: #0066CC;
+}.tabela {
+	color: #333333;
+	padding: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.tabela_titulo {
+	color: #000000;
+	background-color: #CCCCCC;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-right: 2px;
+	padding-bottom: 3px;
+	padding-left: 2px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #333333;
+	margin: 0px;
+}
+.caixa_texto {
+	color: #333333;
+	background-color: #FFFFFF;
+	font-size: 11px;
+	border: 1px solid #999999;
+	position: static;
+	padding: 2px;
+	margin: 0px;
+	height: 12px;
+}
+.caixa_texto_des {
+	color: #666666;
+	background-color: #FFFFFF;
+	font-size: 11px;
+	border: 1px solid #999999;
+	position: static;
+	padding: 2px;
+	margin: 0px;
+	height: 14px;
+}
+.registro {
+
+	color: #333333;
+	padding: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.registro_sel {
+	color: #003366;
+	padding: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	background-color: #D5EAFF;
+}
+.caixa_combo {
+	color: #003366;
+	background-color: #FFFFFF;
+	font-size: 11px;
+	border: 1px solid #666666;
+	position: static;
+	margin: 0px;
+	padding: 1px;
+}
+.caixa_cinza {
+	color: #333333;
+	background-color: #F4F4F4;
+	font-size: 11px;
+	border: 1px solid #999999;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}

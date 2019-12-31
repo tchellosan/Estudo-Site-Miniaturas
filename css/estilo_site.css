@@ -1,0 +1,759 @@
+* {
+    text-decoration: none;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;    
+}
+body {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+h1 {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 2px 0;
+    margin: 0;
+}
+h4 {
+    color: #fff;
+    margin: 0 0 3px 0;
+    font-weight: bold;
+    background-color: #576675;
+    padding: 4px; 
+    text-transform: uppercase;
+}
+h6 {
+    font-size: 10px;
+    margin: 15px 0 5px 0;
+    border-bottom: 1px dotted #8b99a7;
+    padding: 0 0 2px 0;
+}
+p {
+    margin: 2px 0;
+}
+img, a, button {
+    outline: none;
+}
+.pesq-subcat select {
+    border: 1px solid #ccc;
+    color: #003366;
+    font-size: 12px;
+}
+form {
+    float: left;
+    width: 100%;
+}
+.dados-tecnicos {
+    width: 26%;
+    float: left;
+}
+.col-40p {
+    width: 40%;
+    float: left;	    
+}
+.col-60p {
+    width: 60%;
+    float: left;	    
+}
+.forma-pgto {
+    width: 74%;
+    float: left;
+}
+.logo {
+    width: 25%;
+    float: left;
+    text-align: left;
+}
+
+.logo img {
+    width: 80%;
+}
+.menu-compras {
+    width: 48.5%;
+    float: left;
+    position: relative;
+    top: 18px;
+}
+.pesq-subcat {
+    width: 24%;
+    float: left;
+    position: relative;
+    top: 18px;
+}
+.pesq-subcat img {
+    position: relative;
+    top: 1px;
+}
+.btn-pesquisa {
+    width: 2.5%;
+    float: left;
+    position: relative;
+    top: 17px;
+}
+.titulo-miniatura, .destaque-preco {
+    font-size: 13px;
+    font-weight: bold;
+}
+.preco-normal {
+    font-size: 12px;
+    text-decoration: line-through;
+}
+.preco-desconto {
+}
+.credito-imagem {
+    font-size: 8px;
+    letter-spacing: 1pt;
+}
+.link-menu-sup {
+    color: #fff;
+    padding-right: 18px;
+    padding-left: 9px;
+}
+.link-menu-sup:hover {
+    color: #ffcc00;
+}
+.link-radio {
+    padding: 0 5px 0 15px;
+    background-image: url('../img/marcador_radio.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.link-radio:hover {
+    text-decoration: underline;
+}
+.radio-sel {
+    padding: 0 5px 0 15px;
+    background-image: url('../img/marcador_radioSel.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.link-detalhes {
+    font-size: 11px;
+    line-height: 20px;
+    background-image: url('../img/marcador_detalhes.gif');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 10px;
+}
+.link-detalhes:hover {
+    text-decoration: underline;
+}
+.link-carrinho {
+    padding: 2px 15px 0 18px;
+    background-image: url('../img/marcador_carrinho.gif');
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 11px;
+}
+.link-carrinho:hover {
+    text-decoration: underline;
+}
+.link-cadastro {
+    padding: 2px 10px 0 12px;
+    background-image: url('../img/marcador_cadastro.gif');
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 11px;
+}
+.link-cadastro:hover {
+    text-decoration: underline;
+}
+.info-filtro {
+    width: 100%;
+    overflow: auto;
+}
+.total-itens {
+    width: 55%;
+    float: left;
+}
+.ordenar-por {
+    width: 45%;
+    text-align: right;
+    float: left;
+}
+.ordenar-por h1 {
+    font-size: 11px;
+    padding-top: 5px;
+}
+.card-miniaturas {
+    width: 50%;
+    float: left;
+    margin-bottom: 15px;
+}
+.card-imagem {
+    width: 100%;
+    float: left;	
+}
+.card-imagem img {
+    max-width: 100%;
+    border: none;
+}
+.card-imagem a img {
+    max-width: 100%;    
+}
+.card-info {
+    width: 100%;
+    float: left;	
+}
+.card-info img {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.ampliar {
+    width: 506px;
+}
+.ampliar img {
+    width: 420px;
+}
+.ampliar .titulo-imagem {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+    font-weight: bolder;
+    background-image: url('../img/logo_fs2.gif');
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-align: right;
+}
+.parcelas {
+    font-size: 11px;
+    padding: 0;
+    height: 10px;
+    width: 50%;
+}
+.btn-pesquisa button, 
+.continuar button, 
+.confirmar-pgto button {
+    padding: 0;
+    border: 0;
+    font-size: 0;
+}
+.confirmar-pgto button {
+    margin-top: 5px;
+}
+.btn-pesquisa button:hover, 
+.continuar button:hover, 
+.confirmar-pgto button {
+    cursor: pointer;
+}
+#caixa-detalhes table {
+    width: 100%;
+}
+#caixa-detalhes a img:first-of-type, #caixa-detalhes span + img:first-of-type {
+    float: right;
+}
+#topo {
+    height: 50px;
+    text-align: right;
+    padding: 0;
+}
+#corpo {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;	
+}
+#menuSup {
+    height: 40px;
+    background-image: url('../img/fundo_menusup.jpg');
+    padding: 12px 0 0 30px;
+    background-repeat: no-repeat;
+}
+#caixa, .caixa-forma-pgto {
+    padding: 7px;
+    border: 1px solid #ccc;
+    font-size: 11px;
+    margin: 0 0 5px 0;
+    overflow: auto;
+    clear: both;
+}
+#caixa [scope="row"] {
+    text-align: right;
+    font-weight: bold;
+}
+#caixa caption {
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+#rodape {
+    font-size: 10px;
+    padding: 5px 0;
+}
+#caixa-detalhes {
+    background-color: #f5f6f8;
+    margin: 0 0 2px 10px;
+    padding: 2px 5px 5px 5px;
+}
+#caixa-detalhes table + p {
+    margin-top: 10px;
+}
+.caixa-erro {
+    padding: 5px 0;
+    text-align: center;
+}
+h2.mensagem-erro  {
+    color: #333333;
+    font-size: 1.5em;
+    text-align: left;
+}
+#meu-carrinho,  
+#pagamento {
+    width: 50%;
+    float: left;
+    clear: left;
+}
+#pagamento.tela-pgto-pagamento {
+    width: 70%;
+    float: left;
+    clear: left;
+}
+#num-ped {
+    width: 50%;
+    float: right;
+}
+#num-ped.tela-pgto-num-ped {
+    width: 30%;
+    float: right;
+}
+.cabec-det-ped .tela-det-ped-num, 
+.cabec-det-ped .tela-det-ped-status{
+    width: 50%;
+}
+#num-ped, .alterar-pedido {
+    text-align: right;
+}
+#meu-carrinho span, #num-ped span {
+    font-size: 14px;
+    font-weight: normal;
+}
+#num-ped span.numero {
+    font-size: 17px;
+    background-color: #cfdea3;
+    padding: 0 10px; 
+}
+#itens-pedido {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#itens-pedido thead th {
+    color: #ffffff;
+    background-color: #899999;
+    font-weight: bold;
+    padding: 4px;
+    margin: 0;
+}
+#itens-pedido tbody td {
+    margin: 0 0 2px 0;
+    border-bottom: 1px dotted #8b99a7;
+    padding: 8px 4px 8px 0;
+}
+#itens-pedido tbody td img {
+    max-width: 100%;
+}
+[colspan] {
+    text-align: left;
+}
+#itens-pedido tbody td:first-child {
+    text-align: left;
+    width: 53px;
+}
+#itens-pedido tbody td:nth-child(2) {
+    text-align: left;
+}
+#itens-pedido tfoot td {
+    background-color: #e8eaea;
+    font-weight: bold;
+    border-bottom: 1px dotted #8b99a7;
+    padding: 4px;
+}
+#itens-pedido [type="number"] {
+    width: 40%;
+    border: 1px solid #cccccc;
+    padding: 3px;
+}
+#comprar-mais, 
+.endereco-atual, 
+.alterar-endereco {
+    float: left;
+    width: 50%;
+}
+#finalizar-pedido {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+#carrinho-vazio, #email-cadastrado {
+    text-align: center;
+    padding: 100px 0;
+}
+#carrinho-vazio span, #email-cadastrado span {
+    font-size: 14px;
+    font-weight: normal;
+}
+#carrinho-vazio p, #email-cadastrado p {
+    margin-top: 15px;
+}
+[class|=login] {
+    background-color: #f4f4f4;
+    border: 1px solid #999999;
+    padding: 20px;
+    margin: 0 1% 0 0;
+    overflow: auto;
+    float: left;
+}
+.login-cadastro {
+    width: 49.5%;
+}
+.login-cadastro:last-child {
+    margin-right: 0;
+}
+.login-cadastro h2 {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 5px 0;
+    margin: 0;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+[class|=login] p {
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+.esqueci-senha, .continuar {
+    float: right;
+    width: 50%;
+    margin-top: 20px;
+}
+.continuar {
+    text-align: right;
+}
+[id|="etapa"] {
+    height: 50px;
+    text-align: right;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#etapa-1 {
+    background-image: url('../img/fundo_etapa1.jpg');
+}
+#etapa-2 {
+    background-image: url('../img/fundo_etapa2.jpg');
+}
+#etapa-3 {
+    background-image: url('../img/fundo_etapa3.jpg');
+}
+#etapa-4 {
+    background-image: url('../img/fundo_etapa4.jpg');
+}
+
+#caixa-cadastro {
+    background-color: #f4f4f4;
+    border: 1px solid #999999;
+    padding: 20px 10px;
+    font-size: 12px;
+    overflow: auto;
+}
+#dados-pessoais, #endereco-entrega {
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+    position: relative;
+}
+.campo-entrada {
+    margin-top: 3px;
+    overflow: auto;
+
+}
+.campo-entrada label {
+    width: 35%;
+    display: block;
+    float: left;
+    height: 20px;
+    text-align: right;
+    padding: 3px 3px 0 0;
+}
+.campo-entrada input, 
+.campo-entrada select {
+    width: 65%;
+    display: block;
+    float: left;
+    height: 20px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
+.campo-entrada select {
+    padding-left: 0;
+}
+.campo-entrada input + span {
+    position: absolute;
+}
+#caixa-cadastro .campo-entrada select, 
+#caixa-cadastro input[name="cpf"], 
+#caixa-cadastro input[name="rg"],
+#caixa-cadastro input[name="sexo"],
+#caixa-cadastro input[name="uf"],
+#endereco-entrega input[name="complemento"] {
+    width: 30%;
+}
+#caixa-cadastro input[name*="senha"], 
+#endereco-entrega input[name*="numero"], 
+#endereco-entrega input[name="cep"] {
+    width: 25%;
+}
+#caixa-cadastro .continuar {
+    padding-right: 10px;
+}
+#caixa > h2, .caixa-forma-pgto > h2 {
+    background-color: #f4f4f4;
+    padding: 4px;
+    font-size: 1.2em;
+    margin: 0;
+}
+[readonly] {
+    background: #fafafa;
+    pointer-events: none;
+    touch-action: none;
+}
+.mensagem-manut {
+    float: left;
+    margin: 20px 0 0 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.cadastro-manut {
+    margin-top: 40px;
+}
+#resumo-pedido {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#resumo-pedido thead th:nth-child(1),
+#resumo-pedido tbody td:nth-child(1) {
+    text-align: left;
+}
+.alterar-endereco,
+#resumo-pedido thead th:nth-child(3),
+#resumo-pedido tbody td:nth-child(3),
+#resumo-pedido thead th:nth-child(4),
+#resumo-pedido tbody td:nth-child(4),
+#resumo-pedido tfoot td:nth-child(2) {
+    text-align: right;
+}
+#resumo-pedido td, 
+#resumo-pedido th {
+    margin: 0 0 2px 0;
+    border-bottom: 1px dotted #8b99a7;
+    padding: 4px 4px 4px 0;
+}
+#resumo-pedido tfoot td {
+    font-weight: bold;
+}
+#valor-desconto tfoot td {
+    font-weight: normal;
+}
+#resumo-pedido tfoot tr:last-child span {
+    font-size: 14px;
+    color: #657c9c;
+    margin: 0;
+    font-weight: normal;
+}
+.caixa-boleto-opcao,
+.caixa-credito-opcao {
+    float: left;
+    width: 25%;
+}
+.caixa-boleto-confirmar,
+.caixa-credito-confirmar {
+    float: left;
+    width: 75%;
+}
+.alterar-pedido {
+    margin-bottom: 5px;
+}
+.local-entrega {
+    margin-top: 5px;
+}
+.alterar-endereco {
+    margin-top: 4px;
+}
+.confirmar-pgto {
+    text-align: right;
+    margin-top: 10px;
+    border-top: 2px solid #333;
+}
+h2 > span {
+    font-weight: normal;
+}
+p > img {
+    float: left;
+}
+.caixa-credito-confirmar p > img, .ajustar-img img {
+    float: left;
+    margin-top: 5px;
+}
+.caixa-boleto-opcao > input, 
+.caixa-boleto-opcao > img,
+.caixa-boleto-opcao > span {
+    float: left;
+}
+.caixa-boleto-opcao > span {
+    margin: 10px 0 0 5px;;
+}
+.caixa-boleto-opcao > input {
+    margin: 10px 5px 0 5px;;
+}
+.opcao-forma-pgto {
+    margin-top: 10px;
+    overflow: auto;
+}
+.opcao-forma-pgto > input, 
+.opcao-forma-pgto > label span,
+.opcao-forma-pgto > label img,
+.opcao-forma-pgto > label {
+    float: left;
+}
+.caixa-boleto-opcao .opcao-forma-pgto > label img {
+    margin: 2px 5px 0;
+}
+.caixa-boleto-opcao .opcao-forma-pgto > label span,
+.caixa-boleto-opcao .opcao-forma-pgto > input {
+    margin-top: 12px;
+}
+.caixa-credito-opcao .opcao-forma-pgto > label img {
+    margin: 2px 5px 0;
+}
+.caixa-credito-opcao .opcao-forma-pgto > label span {
+    margin-top: 3px;
+}
+.caixa-credito-confirmar .campo-entrada label {
+    width: 20%;
+}
+.caixa-credito-confirmar .campo-entrada input[name="num_cartao"] {
+    width: 25%;
+}
+.caixa-credito-confirmar .campo-entrada input[name="nome_cartao"] {
+    width: 50%;
+}
+.caixa-credito-confirmar .campo-entrada input[name="data_cartao_mes"],
+.caixa-credito-confirmar .campo-entrada input[name="data_cartao_ano"] {
+    width: 7%;
+    *margin-right: 20px;
+}
+.caixa-credito-confirmar .campo-entrada span {
+    position: static;
+    float: left;
+    margin: 0 5px;
+    font-size: 18px;
+}
+.caixa-credito-confirmar .campo-entrada input[name="cod_seg"] {
+    width: 10%;
+}
+.caixa-pgto p {
+    margin-top: 5px;
+}
+td.parcelas label {
+    overflow: auto;
+}
+td.parcelas input,
+td.parcelas span {
+    float: left;
+}
+td.parcelas input,
+td.parcelas span {
+    margin-top: 7px;
+}
+.cabec-num-ped {
+    margin-bottom: 5px;
+    overflow: auto;
+}
+[class|="mensagem-tela"] {
+    padding: 10px;
+    border: 1px solid #ffbf00;
+    background-color: #fff9e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.mensagem-tela-sucesso {
+    border: 1px solid #29a329;
+    background-color: #ebfaeb;
+}
+.emitir-boleto {
+    text-align: right;
+    margin-bottom: 7px;
+}
+.login-pedidos {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.login-pedidos p {
+    margin: 0;
+}
+.login-pedidos form {
+    width: 50%;
+    margin: 0 auto;
+    float: none;
+}
+.login-pedidos .esqueci-senha {
+    position: absolute;
+    left: 20px;
+}
+.login-pedidos .campo-entrada label {
+    width: 20%;
+}
+.login-pedidos .campo-entrada input {
+    width: 80%;
+}
+#lista-pedidos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    text-align: left;
+}
+#lista-pedidos th,
+#lista-pedidos td {
+    margin: 0 0 2px 0;
+    border-bottom: 1px dotted #8b99a7;
+    padding: 4px 4px 4px 0;
+}
+#lista-pedidos th {
+    border: none;
+    background-color: #899999;
+    color: #fff;
+    font-weight: bold;
+}
+#lista-pedidos th:last-child,
+#lista-pedidos td:last-child{
+    text-align: right;
+}
+.btn-tela-detalhe, 
+.btn-tela-lista-pedidos {
+    text-align: right;
+}
+.pedidos-detalhe #itens-pedido tbody td {
+    padding: 4px;
+}
+.pedidos-detalhe #itens-pedido thead th:nth-child(3),
+.pedidos-detalhe #itens-pedido thead th:nth-child(4),
+.pedidos-detalhe #itens-pedido tbody td:nth-child(4),
+.pedidos-detalhe #itens-pedido tbody td:nth-child(5),
+.pedidos-detalhe #itens-pedido tfoot td:nth-child(2) {
+    text-align: right;
+}
+#caixa.recuperar-senha {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 0;
+}
