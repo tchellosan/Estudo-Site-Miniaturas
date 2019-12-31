@@ -12,6 +12,8 @@ Os principais destaques em relação são:
 
  - Separação da codificação HTML, JS, PHP, CSS, etc visando deixar fácil o entendimento do código e manutenção.
  - Uso do webservice ViaCEP para localização de endereços.
+ - Validação de dados do lado do cliente e servidor.
+ - Tratamento de erros.
  - Emissão do boleto bancário
 
 Para utilizar o projeto: 
